@@ -1,0 +1,13 @@
+Clase 1 --> Recovery/Create new password --> PAGE ✅
+Clase 2 --> Recovery/Email is sent --> PAGE ✅
+Clase 3 --> Login --> PAGE ✅
+Clase 4 --> Create account --> PAGE ✅
+Clase 5 --> My account --> COMPONENTE ✅
+Clase 6 --> Product Cards --> CONTAINER CON COMPONENTES ✅
+Clase 7 --> Side Menu small --> COMPONENTE ✅
+Clase 8 --> Side Menu --> COMPONENTE✅
+Clase 9 --> My order --> COMPONENTE con COMPONENTES ✅
+Clase 10 --> History of orders --> COMPONENTE ✅
+Clase 11 --> Header --> COMPONENTE ✅
+Clase 12 --> Big Product Card -->COMPONENTE ✅
+Clase 13 --> Shopping cart preview --> COMPONENTE✅
