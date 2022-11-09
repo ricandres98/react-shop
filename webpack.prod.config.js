@@ -9,7 +9,7 @@ module.exports = {
  output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: './'
  },   
  resolve: {
     extensions: ['.js', '.jsx'],
@@ -23,7 +23,7 @@ module.exports = {
         '@context': path.resolve(__dirname, 'src/context'),
     }
  },
- mode: "development",
+ mode: "production",
  module: {
     rules:[
         {
