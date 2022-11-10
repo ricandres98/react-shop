@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import Layout from "@containers/Layout";
 import CreateNewPassword from "@components/CreateNewPassword";
-import Home from "@pages/Home";
 import NotFound from "@pages/NotFound";
 import Login from "@pages/Login";
 import EmailSent from "@components/EmailSent";

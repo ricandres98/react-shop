@@ -37,7 +37,7 @@ const MobileMenu = ({ closeComponent }) => {
         <ul>
           <li>
             <a 
-              href="/#/orders"
+              href="./#/orders"
               onClick={closeComponent}
             >
                 My orders
@@ -45,7 +45,7 @@ const MobileMenu = ({ closeComponent }) => {
           </li>
           <li>
             <a 
-              href="/#/account"
+              href="./#/account"
               onClick={closeComponent}
             >
                 My account
@@ -60,7 +60,7 @@ const MobileMenu = ({ closeComponent }) => {
             </a>
           </li>
           <li>
-            <a href="/" className="sign-out">
+            <a href="./" className="sign-out">
               Sign out
             </a>
           </li>

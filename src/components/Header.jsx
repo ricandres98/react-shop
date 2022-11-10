@@ -38,7 +38,7 @@ const Header = () => {
         />
 
         <div className="navbar-left">
-          <a href="/">
+          <a href="./">
             <img src={logo} alt="logo" className="logo" />
           </a>
 
