@@ -15,9 +15,9 @@ import CreateAccount from "@pages/CreateAccount";
 import MyAccount from "@components/MyAccount";
 import MyOrder from "@containers/MyOrder";
 import '@styles/global.css';
-import Checkout from "@containers/Checkout";
 import AppContext from '@context/AppContext.js';
 import useInitialState from "../hooks/useInitialState";
+import MainContainer from "../containers/MainContainer";
 
 const App = () => {
     const initialState = useInitialState()
@@ -26,7 +26,7 @@ const App = () => {
         <HashRouter>
           <Layout>
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/" element={<MainContainer />} />
               <Route exact path="/login" element={<Login />} />
               <Route
                 exact
@@ -52,11 +52,6 @@ const App = () => {
                 exact
                 path='/orders'  
                 element={<MyOrder/>}
-                />
-              <Route 
-                exact
-                path='/test'  
-                element={<Checkout/>}
                 />
               <Route path="*" element={<NotFound />} />
             </Routes>
