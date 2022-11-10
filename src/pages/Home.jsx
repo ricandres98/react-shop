@@ -10,7 +10,6 @@ const Home = () => {
   // localStorage.setItem('shopping_cart', JSON.stringify(shoppingCart));
     return (
         <>
-            <Header />
             <MainContainer />
             <a href='/login'>Login</a>
         </>

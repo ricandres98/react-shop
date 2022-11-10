@@ -12,3 +12,10 @@ body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
+* {
+    box-sizing: border-box;
+}
+
+.icon {
+    cursor: pointer;
+}

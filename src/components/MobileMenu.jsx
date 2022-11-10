@@ -2,9 +2,14 @@ import React from 'react';
 import '@styles/MobileMenu.scss';
 
 
-const MobileMenu = () => {
+const MobileMenu = ({ closeComponent }) => {
     return (
-      <div className="mobile-menu">
+      <div className="MobileMenu">
+        <img 
+          src="./icons/icon_close.png" 
+          alt="close"
+          onClick={closeComponent}
+        />
         <ul>
           <li>
             <a href="/">CATEGORIES</a>
@@ -31,10 +36,20 @@ const MobileMenu = () => {
 
         <ul>
           <li>
-            <a href="/">My orders</a>
+            <a 
+              href="./#/orders"
+              onClick={closeComponent}
+            >
+                My orders
+            </a>
           </li>
           <li>
-            <a href="/">My account</a>
+            <a 
+              href="./#/account"
+              onClick={closeComponent}
+            >
+                My account
+            </a>
           </li>
         </ul>
 
@@ -45,7 +60,7 @@ const MobileMenu = () => {
             </a>
           </li>
           <li>
-            <a href="/" className="sign-out">
+            <a href="./" className="sign-out">
               Sign out
             </a>
           </li>

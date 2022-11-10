@@ -3,10 +3,10 @@ import {
     BrowserRouter,
     Routes,
     Route,
+    HashRouter,
 } from 'react-router-dom';
 import Layout from "@containers/Layout";
 import CreateNewPassword from "@components/CreateNewPassword";
-import Home from "@pages/Home";
 import NotFound from "@pages/NotFound";
 import Login from "@pages/Login";
 import EmailSent from "@components/EmailSent";
@@ -14,18 +14,18 @@ import CreateAccount from "@pages/CreateAccount";
 import MyAccount from "@components/MyAccount";
 import MyOrder from "@containers/MyOrder";
 import '@styles/global.css';
-import Checkout from "@containers/Checkout";
 import AppContext from '@context/AppContext.js';
 import useInitialState from "../hooks/useInitialState";
+import MainContainer from "../containers/MainContainer";
 
 const App = () => {
     const initialState = useInitialState()
     return (
       <AppContext.Provider value={initialState}>
-        <BrowserRouter>
+        <HashRouter>
           <Layout>
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/" element={<MainContainer />} />
               <Route exact path="/login" element={<Login />} />
               <Route
                 exact
@@ -52,15 +52,10 @@ const App = () => {
                 path='/orders'  
                 element={<MyOrder/>}
                 />
-              <Route 
-                exact
-                path='/test'  
-                element={<Checkout/>}
-                />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
-        </BrowserRouter>
+        </HashRouter>
       </AppContext.Provider>
     );
 }

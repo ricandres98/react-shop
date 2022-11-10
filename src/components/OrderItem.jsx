@@ -14,6 +14,7 @@ const OrderItem = ({ product }) => {
       <img 
         src="./icons/icon_close.png" 
         alt="close" 
+        className='icon'
         onClick={() => removeItem(product.id)}
       />
     </div>
